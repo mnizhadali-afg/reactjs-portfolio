@@ -1,4 +1,5 @@
-import Hero from './components/Hero';
+import Hero from './components/hero/Hero';
+import WhoAmI from './components/who-ami/WhoAmI';
 import Navigation from './components/Navigation';
 
 export default function App() {
@@ -6,6 +7,7 @@ export default function App() {
     <>
       <Navigation />
       <Hero />
+      <WhoAmI />
     </>
   );
 }

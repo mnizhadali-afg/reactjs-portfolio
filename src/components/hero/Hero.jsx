@@ -1,9 +1,9 @@
-import GradientCircle from './GradientCircle';
-import MessageBox from './MessageBox';
+import GradientCircle from '../GradientCircle';
+import MessageBox from '../MessageBox';
 
 function Hero() {
   return (
-    <section className='bg-farbe3-50 flex items-center justify-center min-h-screen'>
+    <section className='bg-farbe3-50 flex items-center justify-center min-h-screen -mt-[4.5rem]'>
       {/* TODO: Main Circle */}
       <GradientCircle w={600} h={600} />
 
@@ -16,7 +16,7 @@ function Hero() {
               <p className='text-farbe1-500 tracking-wide font-extralight'>
                 Hello, {"I'm"}
               </p>
-              <p className='text-2xl font-extrabold text-farbe1-950'>
+              <p className='text-2xl font-extrabold text-farbe1-950 tracking-[.04rem]'>
                 Ali Mousavi
               </p>
             </div>
@@ -27,7 +27,7 @@ function Hero() {
       {/* TODO: MessageBox: Headline */}
       <div className='absolute -translate-x-[22rem] -translate-y-[2rem]'>
         <MessageBox>
-          <p className='text-farbe3-700 tracking-widest text-md font-medium uppercase mx-4'>
+          <p className='text-farbe3-700 tracking-[.125rem] text-md font-semibold uppercase mx-4'>
             Frontend
           </p>
           <p className='text-farbe3-700 text-xs tracking-[0.125rem] uppercase mx-4'>
@@ -52,7 +52,7 @@ function Hero() {
         <img
           src='/assets/reactjs.svg'
           alt='reactjs logo'
-          className='absolute -translate-y-[75px] translate-x-[12px] rotate-12 w-[65px] h-[65px]'
+          className='absolute -translate-y-[75px] translate-x-[12px] w-[65px] h-[65px]'
         />
       </div>
 
@@ -67,7 +67,7 @@ function Hero() {
       </div>
 
       {/* TODO: Git Logo */}
-      <div className='absolute translate-x-[10rem] translate-y-[20rem]'>
+      <div className='absolute translate-x-[10rem] translate-y-[23rem]'>
         <GradientCircle w={40} h={40} />
         <img
           src='/assets/git.svg'
